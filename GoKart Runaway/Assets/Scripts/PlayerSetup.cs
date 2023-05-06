@@ -7,6 +7,7 @@ public class PlayerSetup : MonoBehaviour
 {
     public GoKartController goKartController;
     public FireRocket fireRocket;
+    public Health health;
 
     public GameObject camera;
 
@@ -14,5 +15,6 @@ public class PlayerSetup : MonoBehaviour
         fireRocket.enabled = true;
         goKartController.enabled = true;
         camera.SetActive(true);
+        health.enabled = true;
     }
 }

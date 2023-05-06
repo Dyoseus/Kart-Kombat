@@ -28,6 +28,7 @@ public class FireRocket : MonoBehaviour
     {
         if(hasRocketAbility == true){
             
+            
             if (Input.GetKeyDown(KeyCode.Space)){
 
                 Fire();
@@ -38,22 +39,17 @@ public class FireRocket : MonoBehaviour
 
     void Fire(){
         Destroy(rocketOn);  
-                // Instantiate the rocket prefab
-                var rocket = Instantiate(rocketPrefab, spawnPoint.position, spawnPoint.rotation);
-
-                // Set the rocket's speed and spin speed
-                rocket.GetComponent<Rigidbody>().velocity = spawnPoint.forward * rocketSpeed;
-
                 
+        // Instantiate the rocket prefab
+        var rocket = Instantiate(rocketPrefab, spawnPoint.position, spawnPoint.rotation);
 
-                hasRocketAbility = false;
+        // Set the rocket's speed and spin speed
+        rocket.GetComponent<Rigidbody>().velocity = spawnPoint.forward * rocketSpeed;
+
+        
+
+        hasRocketAbility = false;
     }
 
-    void OnCollisionEnter(Collision collision){
-        Health health = collision.gameObject.GetComponent<Health>();
-        if (health != null)
-            {
-                health.TakeDamage(damage);
-            }
-    }
+    
 }
