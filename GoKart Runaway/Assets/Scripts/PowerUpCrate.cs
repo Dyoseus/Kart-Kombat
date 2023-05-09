@@ -4,13 +4,13 @@ using System.Collections.Generic;
 
 public class PowerUpCrate : MonoBehaviour
 {
-    public GameObject rocketPrefab;
+    public GameObject fireBallPrefab;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<FireRocket>().GiveRocketAbility(rocketPrefab);
+            other.GetComponent<FireFireBall>().GiveFireBallAbility(fireBallPrefab);
             Destroy(gameObject);
         }
     }

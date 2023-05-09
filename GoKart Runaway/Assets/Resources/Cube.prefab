@@ -185,7 +185,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 37626291}
   - {fileID: 37626292}
-  sceneViewId: 1
+  sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
 --- !u!114 &37626294
@@ -201,6 +201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goKartController: {fileID: 0}
-  fireRocket: {fileID: 0}
+  fireFireBall: {fileID: 0}
   health: {fileID: 6681190675134288421}
   camera: {fileID: 0}

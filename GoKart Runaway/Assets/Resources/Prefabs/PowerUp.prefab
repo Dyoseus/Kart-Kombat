@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7967410046981948996}
   m_Layer: 0
   m_Name: PowerUp
-  m_TagString: Untagged
+  m_TagString: Crate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4184350126ef4f345ab8fdd31bf58688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocketPrefab: {fileID: 555262309622295915, guid: 1dbf987bbfd2cad4ea9e24dfd79c59c9,
+  fireBallPrefab: {fileID: 555262309622295915, guid: bdd05fad7ebba6d4abd12a4a6e468035,
     type: 3}
 --- !u!1001 &1112771986695725190
 PrefabInstance:

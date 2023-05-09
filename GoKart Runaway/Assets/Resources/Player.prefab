@@ -436,14 +436,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1569afc466c06ea4088da2514b59ad4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocketPrefab: {fileID: 555262309622295915, guid: 1dbf987bbfd2cad4ea9e24dfd79c59c9,
+  fireBallPrefab: {fileID: 555262309622295915, guid: bdd05fad7ebba6d4abd12a4a6e468035,
     type: 3}
-  rocketCosmetic: {fileID: 555262309622295915, guid: 62b31fb9d381a254faa032c779a04e6f,
+  fireBallCosmetic: {fileID: 8933592584241945908, guid: e8838f28a0823ef439f1e97d17e37b93,
     type: 3}
-  rocketOn: {fileID: 0}
-  damage: 101
+  fireBallOn: {fileID: 0}
   spawnPoint: {fileID: 8314665631413024980}
-  hasRocketAbility: 0
+  hasAbility: 0
 --- !u!114 &4870277165051775138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,7 +512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goKartController: {fileID: 4045805026491227319}
-  fireRocket: {fileID: 172451128}
+  fireFireBall: {fileID: 172451128}
   health: {fileID: 2500557467489241872}
   camera: {fileID: 1845247674}
 --- !u!114 &2500557467489241872
