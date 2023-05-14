@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class FireFireBall : MonoBehaviour
 {
@@ -48,10 +49,9 @@ public class FireFireBall : MonoBehaviour
         
         
         // Instantiate the fireball prefab
-        var fireBall = Instantiate(fireBallPrefab, spawnPoint.position, spawnPoint.rotation);
-
-        // Set the fireball's speed and spin speed
+        var fireBall = PhotonNetwork.Instantiate(fireBallPrefab.name, spawnPoint.position, spawnPoint.rotation);
         fireBall.GetComponent<Rigidbody>().velocity = spawnPoint.forward * fireBallSpeed;
+
         
         fireCount++; // increment the fire count
     }
