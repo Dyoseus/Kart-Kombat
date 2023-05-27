@@ -45,7 +45,7 @@ public class FireFireBall : MonoBehaviour
     IEnumerator FireRepeatedly() {
     while (fireCount < 15) // repeat 15 times
     {
-        yield return new WaitForSeconds(0.6f); // wait for 0.6 seconds
+        yield return new WaitForSeconds(0.3f); // wait for 0.6 seconds
         
         
         // Instantiate the fireball prefab
