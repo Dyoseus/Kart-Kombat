@@ -1,20 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Photon.Pun;
 
 
 public class PlayerSetup : MonoBehaviour
 {
     public GoKartController goKartController;
-    public FireRocket fireRocket;
+    public FireFireBall fireFireBall;
     public Health health;
 
     public GameObject camera;
 
+    public string nickname;
+
+    public TextMeshPro nicknameText;
+
     public void IsLocalPlayer(){
-        fireRocket.enabled = true;
+        fireFireBall.enabled = true;
         goKartController.enabled = true;
         camera.SetActive(true);
         health.enabled = true;
+    }
+
+    [PunRPC]
+    public void SetNickname(string _name){
+        nickname = _name;
+
+        nicknameText.text = nickname;
     }
 }

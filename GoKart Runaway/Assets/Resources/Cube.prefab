@@ -201,6 +201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goKartController: {fileID: 0}
-  fireRocket: {fileID: 0}
+  fireFireBall: {fileID: 0}
   health: {fileID: 6681190675134288421}
   camera: {fileID: 0}
