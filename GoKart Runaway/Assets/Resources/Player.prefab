@@ -529,6 +529,7 @@ GameObject:
   - component: {fileID: 3609841779063590059}
   - component: {fileID: -7511994272227296702}
   - component: {fileID: 2500557467489241872}
+  - component: {fileID: 7629188621426799302}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -753,7 +754,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  isLocalPlayer: 0
+--- !u!114 &7629188621426799302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045805026491227317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24155f6eeea913479008780173d1f1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  landmine: {fileID: 6975950944360649528, guid: 72b48d22bbb9b5346839d640b08e66d2,
+    type: 3}
+  hasMines: 0
 --- !u!1 &4045805026643695236
 GameObject:
   m_ObjectHideFlags: 0
