@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  destructionDelay: 5
 --- !u!114 &-7545518428885757
 MonoBehaviour:
   m_ObjectHideFlags: 0

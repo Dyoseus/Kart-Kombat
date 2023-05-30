@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GoKartController : MonoBehaviour
 {
     [SerializeField] float acceleration = 5f;
@@ -56,7 +57,7 @@ public class GoKartController : MonoBehaviour
     {
         float accelerationInput = acceleration * (Input.GetMouseButton(0)? 1: Input.GetMouseButton(1)? -1 : 0) * Time.fixedDeltaTime;
         rb.AddRelativeForce(Vector3.forward * accelerationInput);
-
+        
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);  
     }
 }

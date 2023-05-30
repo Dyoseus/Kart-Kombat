@@ -6,6 +6,7 @@ using Photon.Pun;
 public class FireBall : MonoBehaviourPunCallbacks
 {
     public int damage = 10; // Amount of damage the rocket inflicts
+    public float destructionDelay = 5f; // Time in seconds before the rocket is destroyed
 
     private GameObject owner; // Reference to the game object that instantiated the rocket
 
@@ -13,6 +14,23 @@ public class FireBall : MonoBehaviourPunCallbacks
     public void SetOwner(GameObject obj)
     {
         owner = obj;
+    }
+
+    private void Start()
+    {
+        // Start the destruction timer
+        StartCoroutine(DestroyAfterDelay());
+    }
+
+    private IEnumerator DestroyAfterDelay()
+    {
+        yield return new WaitForSeconds(destructionDelay);
+
+        // Destroy the rocket
+        if (photonView && photonView.IsMine)
+        {
+            photonView.RPC("DestroyRocket", RpcTarget.All);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
