@@ -63,6 +63,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireBallPrefab: {fileID: 555262309622295915, guid: bdd05fad7ebba6d4abd12a4a6e468035,
     type: 3}
+  mine: {fileID: 0}
 --- !u!114 &-8762433385135424051
 MonoBehaviour:
   m_ObjectHideFlags: 0
