@@ -24,10 +24,11 @@ public class FireBall : MonoBehaviourPunCallbacks
             other.GetComponent<Health>().TakeDamage(damage);
 
             // Destroy the rocket
-            if (photonView && photonView.IsMine)
-            {
-                photonView.RPC("DestroyRocket", RpcTarget.All);
-            }
+            DestroyRocket();
+        }
+
+        if (other.CompareTag("Map")){
+            DestroyRocket();
         }
     }
 

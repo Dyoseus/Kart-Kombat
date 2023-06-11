@@ -16,7 +16,7 @@ public class CrateManager : MonoBehaviourPunCallbacks
         base.OnJoinedRoom();
 
         // Start spawning crates
-        InvokeRepeating("SpawnCrate", 0f, 5f); // Spawn a crate every 5 seconds
+        InvokeRepeating("SpawnCrate", 0f, 3f); // Spawn a crate every 5 seconds
     }
 
     private void SpawnCrate()
